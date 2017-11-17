@@ -55,3 +55,6 @@ JVMÊ¹ÓÃ-XX:PermSizeÉèÖÃ·Ç¶ÑÄÚ´æ³õÊ¼Öµ£¬Ä¬ÈÏÊÇÎïÀíÄÚ´æµÄ1/64£»ÓÉXX:MaxPermSizeÉèÖ
 
 -XX:+UseCMSInitiatingOccupancyOnly	Ê¹ÓÃÊÖ¶¯¶¨Òå³õÊ¼»¯¶¨Òå¿ªÊ¼CMSÊÕ¼¯	 	½ûÖ¹hostspot×ÔÐÐ´¥·¢CMS GC
 
+
+×òÌìÍíÉÏÉÏÏßÅöµ½Ò»¸öÊý¾ÝÈ¨ÏÞµÄÎÊÌâ£¬Åöµ½Ò»¸ömysql±êÇ©²»¶®£¬ÓÐÊ±¼äÕûÀíÒ»ÏÂ
+

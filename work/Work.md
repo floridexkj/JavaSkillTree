@@ -58,3 +58,4 @@ JVMÊ¹ÓÃ-XX:PermSizeÉèÖÃ·Ç¶ÑÄÚ´æ³õÊ¼Öµ£¬Ä¬ÈÏÊÇÎïÀíÄÚ´æµÄ1/64£»ÓÉXX:MaxPermSizeÉèÖ
 
 ×òÌìÍíÉÏÉÏÏßÅöµ½Ò»¸öÊý¾ÝÈ¨ÏÞµÄÎÊÌâ£¬Åöµ½Ò»¸ömysql±êÇ©²»¶®£¬ÓÐÊ±¼äÕûÀíÒ»ÏÂ
 
+×òÌìÅöµ½ideaÈç¹ûÔÚ·½·¨ÃûÉÏ´ò¶Ïµã£¬Æô¶¯¾Í»áÌØ±ðÂý¡£

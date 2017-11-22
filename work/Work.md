@@ -59,3 +59,26 @@ JVMÊ¹ÓÃ-XX:PermSizeÉèÖÃ·Ç¶ÑÄÚ´æ³õÊ¼Öµ£¬Ä¬ÈÏÊÇÎïÀíÄÚ´æµÄ1/64£»ÓÉXX:MaxPermSizeÉèÖ
 ×òÌìÍíÉÏÉÏÏßÅöµ½Ò»¸öÊý¾ÝÈ¨ÏÞµÄÎÊÌâ£¬Åöµ½Ò»¸ömysql±êÇ©²»¶®£¬ÓÐÊ±¼äÕûÀíÒ»ÏÂ
 
 ×òÌìÅöµ½ideaÈç¹ûÔÚ·½·¨ÃûÉÏ´ò¶Ïµã£¬Æô¶¯¾Í»áÌØ±ðÂý¡£
+
+
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+       <tx:attributes>
+             <tx:method name="get*" propagation="SUPPORTS" read-only="true" />
+             <tx:method name="find*" propagation="SUPPORTS" read-only="true" />
+             <tx:method name="search*" propagation="SUPPORTS" read-only="true" />
+             <tx:method name="list*" propagation="SUPPORTS" read-only="true" />
+             <tx:method name="is*" propagation="SUPPORTS" read-only="true" />
+             <tx:method name="has*" propagation="SUPPORTS" read-only="true" />
+             <tx:method name="*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
+		</tx:attributes>
+    </tx:advice>
+
+    <aop:config proxy-target-class="true">
+        <aop:pointcut id="interceptorPointCuts"
+            expression="execution(* com.b2bex.*.service.*Manager.*(..)) or execution(* com.autozi.*.*.service.*Manager.*(..))" />
+        <aop:advisor advice-ref="txAdvice"
+            pointcut-ref="interceptorPointCuts" />
+    </aop:config>
+    
+ÏîÄ¿ÀïÅäÖÃÍ¨¹ýinterceptorPointCuts¶Ômanager²ãµÄ·½·¨¶¼¼ÓÉÏÊÂÎñ»Ø¹ö²Ù×÷¡£

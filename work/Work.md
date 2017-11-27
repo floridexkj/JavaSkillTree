@@ -84,3 +84,6 @@ JVMÊ¹ÓÃ-XX:PermSizeÉèÖÃ·Ç¶ÑÄÚ´æ³õÊ¼Öµ£¬Ä¬ÈÏÊÇÎïÀíÄÚ´æµÄ1/64£»ÓÉXX:MaxPermSizeÉèÖ
 ÏîÄ¿ÀïÅäÖÃÍ¨¹ýinterceptorPointCuts¶Ômanager²ãµÄ·½·¨¶¼¼ÓÉÏÊÂÎñ»Ø¹ö²Ù×÷¡£
 
 ×òÌì°ÑforÑ­»·È»ºóupdate²Ù×÷ Ð´ÔÚÁËmangager²ãµ¼ÖÂ ÊÂÎñÇ¶Ì×ÊÂÎñ µ¼ÖÂËùÓÐµÄ¸üÐÂ²Ù×÷¶¼±»Ê§Ð§£¬±»»Ø¹ö£¬Ã»·¨Ìá½»ÁË¡£
+
+
+CMSÊÕ¼¯Æ÷£¨Concurrent Mark Sweep£© »ùÓÚ±ê¼ÇÇå³ýËã·¨£¬4¸ö²½Öè£º³õÊ¼±ê¼Ç£¨ÐèÒªstop the world£©¡¢²¢·¢±ê¼Ç¡¢ÖØÐÂ±ê¼Ç£¨ÐèÒªstop the world£¬ÐÞÕý²¢·¢±ê¼ÇÆÚ¼äÒòÓÃ»§Ïß³Ì¼ÌÐøÔË×÷¶øµ¼ÖÂ±ê¼Ç²úÉú±ä¶¯µÄÄÇÒ»²¿·Ö¶ÔÏóµÄ±ê¼Ç¼ÇÂ¼£©¡¢²¢·¢Çå³ý¡£ÓÉÓÚÕû¸ö¹ý³ÌºÄÊ±×î³¤µÄ²¢·¢±ê¼ÇºÍ²¢·¢Çå³ý¹ý³ÌÊÕ¼¯Æ÷Ïß³Ì¶¼¿ÉÒÔºÍÓÃ»§Ïß³ÌÒ»Æð¹¤×÷¡£

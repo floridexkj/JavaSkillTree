@@ -87,3 +87,5 @@ JVMÊ¹ÓÃ-XX:PermSizeÉèÖÃ·Ç¶ÑÄÚ´æ³õÊ¼Öµ£¬Ä¬ÈÏÊÇÎïÀíÄÚ´æµÄ1/64£»ÓÉXX:MaxPermSizeÉèÖ
 
 
 CMSÊÕ¼¯Æ÷£¨Concurrent Mark Sweep£© »ùÓÚ±ê¼ÇÇå³ýËã·¨£¬4¸ö²½Öè£º³õÊ¼±ê¼Ç£¨ÐèÒªstop the world£©¡¢²¢·¢±ê¼Ç¡¢ÖØÐÂ±ê¼Ç£¨ÐèÒªstop the world£¬ÐÞÕý²¢·¢±ê¼ÇÆÚ¼äÒòÓÃ»§Ïß³Ì¼ÌÐøÔË×÷¶øµ¼ÖÂ±ê¼Ç²úÉú±ä¶¯µÄÄÇÒ»²¿·Ö¶ÔÏóµÄ±ê¼Ç¼ÇÂ¼£©¡¢²¢·¢Çå³ý¡£ÓÉÓÚÕû¸ö¹ý³ÌºÄÊ±×î³¤µÄ²¢·¢±ê¼ÇºÍ²¢·¢Çå³ý¹ý³ÌÊÕ¼¯Æ÷Ïß³Ì¶¼¿ÉÒÔºÍÓÃ»§Ïß³ÌÒ»Æð¹¤×÷¡£
+
+1ÔÂ25ºÅM2vÉÏÏßÅöµ½Ò»¸öÎÊÌâ£¬ÏÂµ¥Ê±¼äÈ«²¿

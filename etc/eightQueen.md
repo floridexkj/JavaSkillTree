@@ -12,9 +12,9 @@
 程序如下：
 
 从运行结果可以看出：八皇后共有92种摆法。
+16皇后共有 14772512种摆放方式
 
-
-public class EightQueen{
+    public class EightQueen{
 
     private static final int SIZE = 8;  //皇后的个数，此处设为8，表示8个皇后
 
@@ -92,5 +92,85 @@ public class EightQueen{
         System.out.println();
         count ++;
     }
+    }
 
-}
+
+————————————————————————————
+
+第二种方案： 
+
+>1.简单介绍回溯法思路，就是将所有的结果变成一棵树，从树的结点开始访问，采用深度优先策略，从树的根结点开始访问，如果满足条件，继续访问下一层，如果不满足条件，返回上一个结点，继续访问其它结点。重复操作。 
+2. 对于N皇后问题，我特意做了一张图片。首先放置第一列，有四种放法，如果第一列，放置在第一个，再放置第二列，也有四种放法，很显然，第二列的第一种放法，不符合条件，这种放法下面所的子树也就不必访问了，节省了访问时间，然后继续第三列，第四列。就可以得到结果了。 
+
+    package com.bc;
+
+    public class huanghou {
+
+    public static int Q=4; //代表四皇后
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        int[][] dp=new int[Q][Q];
+        int i,j;
+        //初始化
+        for(i=0;i<Q;i++)
+        {
+            for(j=0;j<Q;j++)
+            {
+                dp[i][j]=0;
+            }
+        }
+        que(0,dp);
+    }
+
+    private static void que(int m, int[][] dp) {
+        // TODO Auto-generated method stub
+
+        if(m==Q){//递归结束条件
+
+          for(int i=0;i<Q;i++)
+          {    
+              for(int j=0;j<Q;j++)
+              {
+                  System.out.print(dp[i][j]+" ");
+              }
+              System.out.println("\n");
+          }
+          System.out.println("**********************");
+        }
+        //递归计算
+        for(int i=0;i<Q;i++)
+        {
+            if (isCorrt(i,m,dp)) {
+               dp[i][m]=1;  
+               que(m+1, dp);
+               dp[i][m]=0;
+            }
+        }
+    }
+    //判断这个位置能不能放皇后
+    private static boolean isCorrt(int i, int j, int[][] dp) {
+        // TODO Auto-generated method stub
+            int s, t;  //s代表行,t代表列 
+            for(s=i,t=0; t<Q; t++)
+                if(dp[s][t]==1 && t!=j)
+                    return false;//判断行
+            for(t=j,s=0; s<Q; s++)
+                if(dp[s][t]==1 && s!=i)
+                    return false;//判断列
+            for(s=i-1,t=j-1; s>=0&&t>=0; s--,t--)
+                if(dp[s][t]==1)
+                    return false;//判断左上方
+            for(s=i+1,t=j+1; s<Q&&t<Q;s++,t++)
+                if(dp[s][t]==1)
+                    return false;//判断右下方
+            for(s=i-1,t=j+1; s>=0&&t<Q; s--,t++)
+                if(dp[s][t]==1)
+                    return false;//判断右上方
+            for(s=i+1,t=j-1; s<Q&&t>=0; s++,t--)
+                if(dp[s][t]==1)
+                    return false;//判断左下方
+            return true;
+    }
+
+    }

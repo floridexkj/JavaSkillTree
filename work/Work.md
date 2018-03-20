@@ -88,4 +88,7 @@ JVMÊ¹ÓÃ-XX:PermSizeÉèÖÃ·Ç¶ÑÄÚ´æ³õÊ¼Öµ£¬Ä¬ÈÏÊÇÎïÀíÄÚ´æµÄ1/64£»ÓÉXX:MaxPermSizeÉèÖ
 
 CMSÊÕ¼¯Æ÷£¨Concurrent Mark Sweep£© »ùÓÚ±ê¼ÇÇå³ýËã·¨£¬4¸ö²½Öè£º³õÊ¼±ê¼Ç£¨ÐèÒªstop the world£©¡¢²¢·¢±ê¼Ç¡¢ÖØÐÂ±ê¼Ç£¨ÐèÒªstop the world£¬ÐÞÕý²¢·¢±ê¼ÇÆÚ¼äÒòÓÃ»§Ïß³Ì¼ÌÐøÔË×÷¶øµ¼ÖÂ±ê¼Ç²úÉú±ä¶¯µÄÄÇÒ»²¿·Ö¶ÔÏóµÄ±ê¼Ç¼ÇÂ¼£©¡¢²¢·¢Çå³ý¡£ÓÉÓÚÕû¸ö¹ý³ÌºÄÊ±×î³¤µÄ²¢·¢±ê¼ÇºÍ²¢·¢Çå³ý¹ý³ÌÊÕ¼¯Æ÷Ïß³Ì¶¼¿ÉÒÔºÍÓÃ»§Ïß³ÌÒ»Æð¹¤×÷¡£
 
-1ÔÂ25ºÅM2vÉÏÏßÅöµ½Ò»¸öÎÊÌâ£¬ÏÂµ¥Ê±¼äÈ«²¿
+1ÔÂ25ºÅM2vÉÏÏßÅöµ½Ò»¸öÎÊÌâ£¬ÏÂµ¥Ê±¼äÈ«²¿±Èµ±Ç°Ê±¼äÉÙ13¸öÐ¡Ê±£¬Ò»µã·¢ÏÖµÄÎÊÌâ£¬¸ÄÁË´úÂë£¬ÖØÐÂ²¿Êð£¬Ò»¶Ù²Ù×÷³¢ÊÔ£¬×îºóÈýµã²Å¶¨Î»µ½ÊÇÊý¾Ý¿âÊÇÊý¾Ý¿âÊ±ÇøÉèÖÃµÄÎÊÌâ
+ÔÚÊý¾Ý¿âÖ´ÐÐ
+set time_zone="+8:00";
+ÎÊÌâ¾ÍºÃ£¬µ±Ê±¸ÄÁËÁÙÊ±µÄ£¬Ã»ÓÐ¸Ämysql µÄÏµÍ³ÅäÖÃÎÄ¼þ£¬µ¼ÖÂ3.16Êý¾Ý¿âÖØÆôÊ±ÇøÓÖ³ÉÄ¬ÈÏµÄÁË£¬ÏßÉÏÎÊÌâÓÖ³öÏÖÕâÎÊÌâ£¬¼¸°ÙÌõ¶©µ¥µÃ°ÑÈý¸öÊ±¼ä×Ö¶ÎÈ«¸Ä»ØÀ´£¬¶¼ÊÇµ±Ê±ÁôµÄ¿Ó°¡¡£
